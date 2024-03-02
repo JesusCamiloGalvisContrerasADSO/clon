@@ -94,6 +94,13 @@ body {
   font-weight: 600;
 }
 
+/* cards----------------- */
+
+.cards__fondo{
+  background-image: url(recursos/section_cards.png);
+  background-size: cover;
+}
+
 .cards__cuidados {
   display: flex;
   justify-content: center;
@@ -288,9 +295,10 @@ body {
 .fondo__paticas {
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: flex-start;
   text-align: center;
+
 }
 
 .paticas {
@@ -298,6 +306,12 @@ body {
   flex-direction: column;
   gap: 80px;
   color: var(--color--blanco);
+}
+.paticas--textos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 .paticas__titulo {
@@ -308,9 +322,142 @@ body {
 .paticas__texto {
   font-size: 23px;
   font-weight: 100;
+  width: 800px;
 }
 
 .paticas__cards {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  gap: 128px;
+}
+
+.cards__container {
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+}
+
+.cards__tarjeta{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 500px;
+  text-align:left
+}
+
+.tarjeta__paticas--titulo{
+  font-size: 35px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.tarjeta__paticas--texto{
+  font-weight: 100;
+  font-size: var(--tamaño--texto);
+
+}
+
+
+/* doctora------------------------------ */
+
+.doctora__fondo{
+  background-image: url(recursos/fondo_ultimo.png);
+
+  
+}
+
+.doctora{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color--blanco);
+  height: 100vh;
+  gap: 100px;
+  font-size: 50px;
+}
+
+.doctora__texto{
+  
+  font-weight: 100;
+}
+
+.doctora__nombre{
+  font-weight: 700;
+  
+}
+
+
+/* --------------footer---------------- */
+
+.pie__pagina--fondo{
+  background-color: #2d2d2d;
+}
+
+.pie__pagina{
+ 
+  height: 50vh;
+  color: var(--color--blanco);
+  display: grid;
+  grid-template: 
+    "title about services other"auto
+    "iconos about services other"150px/500px auto auto auto;
+    gap: 20px 20px;
+    padding: 50px;
+}
+
+.pie__pagina--title{
+  grid-area: title;
+  margin-right: 100px;
+}
+
+.pie__pagina--iconos{
+  grid-area: iconos;
+}
+
+.pie__pagina--about{
+  grid-area: about;
+}
+
+.pie__pagina--services{
+  grid-area: services;
+}
+
+.pie__pagina--other{
+  grid-area: other;
+}
+
+.pie__titulos{
+  padding-bottom: 30px;
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.pie__title--texto{
+  font-weight: 100px;
+  padding-bottom: 30px;
+  width: 400px;
+}
+
+.pie__iconos{
+  background-color: var(--color--blanco);
+  color: black;
+  border-radius: 1000px;
+  padding: 10px;
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.pie__lista{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.titulos__paddin{
+  padding-left: 35px;
 }
